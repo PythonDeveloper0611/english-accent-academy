@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+    <style>
+        .payment-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .payment-input {
+            border: 2px solid #eee;
+            border-radius: 10px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        
+        .payment-input:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 10px rgba(52,152,219,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Payment Section -->
+<div class="container">
+    <div class="payment-container">
+        <h2 class="text-center mb-4">Complete Your Enrollment</h2>
+        <div class="payment-card">
+            <form id="paymentForm">
+                <div class="mb-3">
+                    <label>Card Number</label>
+                    <input type="text" class="form-control payment-input" placeholder="4242 4242 4242 4242">
+                </div>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label>Expiry Date</label>
+                        <input type="text" class="form-control payment-input" placeholder="MM/YY">
+                    </div>
+                    <div class="col-md-6">
+                        <label>CVC</label>
+                        <input type="text" class="form-control payment-input" placeholder="123">
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100 btn-lg">Pay ₹15,000</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
