@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENGLISH ACSCENT ACADEMY | Master Perfect English Pronunciation</title>
+    <title>English AcScent Academy - Master Perfect English Pronunciation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -12,14 +12,6 @@
             --secondary-color: #F0B52D;
             --accent-color: #3D8B74;
         }
-        
-        /* Uppercase Brand Styling */
-        .brand-uppercase {
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            font-weight: 700;
-        }
-
         .hero-section {
             background: linear-gradient(rgba(42,92,130,0.9), rgba(42,92,130,0.8)),
                         url('language-learning-bg.jpg') center/cover;
@@ -28,87 +20,121 @@
             align-items: center;
             color: white;
         }
-
-        /* Social Media Enhancements */
-        .social-media-section .social-icon {
-            font-size: 1.8rem;
-            transition: transform 0.3s ease;
+        .nav-link {
+            color: var(--primary-color) !important;
+            font-weight: 500;
         }
-        .social-media-section .social-icon:hover {
-            transform: translateY(-3px);
+        .cta-button {
+            background: var(--secondary-color);
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-weight: bold;
+        }
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 10px;
+            color: var(--primary-color);
+            transition: color 0.3s;
+        }
+        .social-icon:hover {
+            color: var(--accent-color);
         }
     </style>
 </head>
 <body>
-    <!-- Updated Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg py-3 fixed-top bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <h2 class="brand-uppercase m-0" style="color: var(--primary-color);">
-                    ENGLISH ACSCENT ACADEMY
-                </h2>
+                <h2 class="fw-bold text-primary">English AcScent Academy</h2>
             </a>
-            <!-- Navigation menu remains same -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#courses" data-bs-toggle="dropdown">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#beginner">Beginner Accent Training</a></li>
+                            <li><a class="dropdown-item" href="#advanced">Advanced Pronunciation</a></li>
+                            <li><a class="dropdown-item" href="#business">Business English</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn cta-button ms-3" href="#register">Register/Login</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- ... Other sections remain unchanged ... -->
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4 fw-bold">Master English with Perfect Accent</h1>
+            <p class="lead mb-4">Transform Your Communication Skills with Expert-Led Pronunciation Training</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#courses" class="btn btn-light btn-lg px-5 py-3">Explore Courses</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg px-5 py-3">Free Consultation</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- Enhanced Footer Section -->
-    <footer class="bg-dark text-light py-5">
+    <!-- Featured Courses Section -->
+    <section class="py-5">
         <div class="container">
+            <h2 class="text-center mb-5">Featured Courses</h2>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <h4 class="brand-uppercase mb-3">ENGLISH ACSCENT ACADEMY</h4>
-                    <p class="text-secondary">Mastering English Pronunciation Excellence</p>
+                <!-- Course cards would go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Why Choose AcScent Academy?</h2>
+                    <p class="lead">Expert-led curriculum with personalized accent coaching...</p>
                 </div>
-                
-                <div class="col-md-4 social-media-section">
-                    <h5 class="brand-uppercase mb-3">CONNECT WITH US</h5>
-                    <div class="d-flex justify-content-start">
-                        <a href="https://www.facebook.com/EnglishAcScentAcademy" 
-                           class="social-icon text-light me-3"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/englishacscentacademy" 
-                           class="social-icon text-light me-3"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/englishacscentacademy" 
-                           class="social-icon text-light me-3"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@EnglishAcScentAcademy" 
-                           class="social-icon text-light"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                <div class="col-md-6">
+                    <!-- Would include image or video -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Social Media -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@acscentacademy.com<br>
+                    Phone: +1 (800) 123-4567</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-
                 <div class="col-md-4">
-                    <h5 class="brand-uppercase mb-3">NEWSLETTER</h5>
+                    <h5>Newsletter</h5>
                     <form>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter your email">
-                            <button class="btn btn-primary brand-uppercase" type="button">
-                                Subscribe
-                            </button>
-                        </div>
+                        <input type="email" class="form-control mb-2" placeholder="Enter your email">
+                        <button class="btn cta-button w-100">Subscribe</button>
                     </form>
                 </div>
             </div>
-            <hr class="my-5">
-            <p class="text-center text-secondary mb-0 brand-uppercase">
-                © 2025 ENGLISH ACSCENT ACADEMY - ALL RIGHTS RESERVED!
-            </p>
+            <hr>
+            <p class="text-center mb-0">&copy; 2023 English AcScent Academy. All rights reserved.</p>
         </div>
     </footer>
 
